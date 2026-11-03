@@ -240,19 +240,6 @@ the parameter or delete the entry — do not add an exception.
 
 ---
 
-## CI Pipeline
-
-GitHub Actions runs tests on every push and PR:
-
-1. **Checkout** code + test data repo (via deploy key)
-2. **Seed** intermediates into `ML4T_OUTPUT_DIR`
-3. **Run** pytest inside Docker containers (one job per environment)
-4. **Upload** JUnit XML results as artifacts
-
-See `.github/workflows/test.yml` for the full configuration.
-
----
-
 ## Adding a New Notebook
 
 1. Add a `# %% tags=["parameters"]` cell with production defaults

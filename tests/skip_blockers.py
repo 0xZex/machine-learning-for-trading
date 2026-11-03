@@ -94,9 +94,7 @@ def declared_kind(declaration: dict) -> str:
     return named[0]
 
 
-#: The repository the CI fixture is a checkout of. Every site that mounts it does so
-#: with ``actions/checkout`` at ``ref: ci`` (``.github/workflows/*.yml``, pinned by
-#: ``tests/test_ci_records_the_fixture_it_read.py``), and ``ML4T_DATA_PATH`` points at
+#: The repository the fixture data is a checkout of. ``ML4T_DATA_PATH`` points at
 #: that checkout's ``data/``. Nothing else a data root can be is a checkout of it.
 _FIXTURE_REPO = "third-edition-test-data"
 
